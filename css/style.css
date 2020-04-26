@@ -1,0 +1,257 @@
+/* ubuntu-300 - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ubuntu-v14-latin-300.eot"); /* IE9 Compat Modes */
+  src: local("Ubuntu Light"), local("Ubuntu-Light"),
+    url("../fonts/ubuntu-v14-latin-300.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/ubuntu-v14-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/ubuntu-v14-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/ubuntu-v14-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/ubuntu-v14-latin-300.svg#Ubuntu")
+      format("svg"); /* Legacy iOS */
+}
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ubuntu-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
+    url("../fonts/ubuntu-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/ubuntu-v14-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/ubuntu-v14-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/ubuntu-v14-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/ubuntu-v14-latin-regular.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ubuntu-v14-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"),
+    url("../fonts/ubuntu-v14-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/ubuntu-v14-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/ubuntu-v14-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/ubuntu-v14-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/ubuntu-v14-latin-700.svg#Ubuntu")
+      format("svg"); /* Legacy iOS */
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px 0 15px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #f7f7f7;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav > li {
+  margin-left: 15px;
+}
+
+.nav > li > a {
+  color: #202020;
+}
+
+.nav_btn,
+.nav > li > a:hover {
+  background-color: #5528ff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo_img {
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-image: url(../img/logo.svg);
+  margin-right: 20px;
+}
+
+.logo_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #202020;
+}
+
+.tittle-main {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 57px;
+  line-height: 1.5;
+  color: #202020;
+}
+
+.text-main {
+  font-size: 32px;
+  line-height: 51px;
+  color: #4f4f4f;
+}
+
+.button {
+  background-color: #5528ff;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 45px;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.page {
+  padding: 40px 0;
+  position: relative;
+}
+
+.page-top {
+  border-top: 1px solid #c2c2c2;
+}
+
+.page h2 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  padding: 5px 15px;
+  top: -14px;
+  color: #c2c2c2;
+}
+
+.servises {
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
+  grid-gap: 20px;
+  justify-content: start;
+}
+
+.servises-item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  justify-content: start;
+}
+
+.servises_img {
+  /* flex-basis: 120px;
+  text-align: center; */
+}
+
+.servises_text {
+  flex-basis: calc(100%-120px);
+}
+
+.servises h3 {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.servises p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #b2b2b2;
+}
+
+.clients {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 25%);
+  text-align: center;
+  grid-row-gap: 40px;
+}
+
+.team {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 33%);
+  grid-row-gap: 40px;
+}
+
+.team-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.team-item > div {
+  flex-basis: calc(100%-100px);
+}
+
+.team img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.box-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+.social > li {
+  margin-left: 15px;
+}
+
+.social > li > a {
+  color: #b2b2b2;
+  font-size: 24px;
+}
